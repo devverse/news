@@ -1,0 +1,413 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Thin.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('fonts/Roboto-Regular.ttf')  format('truetype')
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('fonts/Roboto-Medium.ttf')  format('truetype')
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.paginate_button {
+  width: 88%;
+}
+
+.date_price {
+  overflow: hidden;
+}
+
+.date {
+  width: 99%;
+  float: left;
+  font-size: 12px;
+}
+
+.price {
+  width: 30%;
+  float: left;
+  font-size: 12px;
+}
+
+.sneaker_title span, .sneaker_title a {
+  color: #101010;
+  font-size: 14px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-family: "Roboto Medium";
+}
+
+.sneaker_title {
+    margin-top: 10%;
+}
+
+.details_slideshow {
+  height: auto;
+  clear: both;
+  margin-bottom: 15px;
+  float: left;
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 2.5px #aaa;
+  padding: 5px;
+  width: 96%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.swipeout {
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-bottom: 1px #eee solid;
+  margin-bottom: 1px;
+  width: 95%;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.releasesLeft {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.releasesRight {
+  width: 55%;
+  text-align: left;
+}
+
+.menu-dropdown {
+  text-align: center;
+  width: 98%;
+  height: 40px;
+  background-color: #FDFDFD;
+  color: #171717;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 12px;
+  display: block;
+  margin-top: -18px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  padding: 20px;
+}
+
+/* Tabs */
+ul.tabs {
+  padding: 0px;
+  list-style: none;
+  font-size: 12px;
+  width: 100%;
+}
+
+ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px;
+  cursor: pointer;
+  width: 43%;
+}
+
+ul.tabs li.current{
+  background: #ededed;
+  color: #222;
+}
+
+.tab-content{
+  display: none;
+  background: #ededed;
+  padding: 15px;
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+.responsive-image {
+  height: 140px;
+  width: 100%;
+}
+
+.product {
+  overflow: hidden;
+  margin-bottom: 5px;
+  border-bottom: 1px #eee solid;
+  margin-bottom: 1px;
+  width: 95%;
+  margin-left: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.productLeft, .productRight, .releasesRight, .releasesLeft, .salesLeft {
+  float: left;
+}
+
+.releasesLeft img {
+  width: 100%;
+  max-height: 200px;
+}
+
+.releasesLeft {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.releasesRight {
+  width: 55%;
+}
+
+.speach-center {
+  float: left;
+  display: inline;
+  text-align: left;
+  width: 95%;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #cacaca;
+}
+
+.speach-left {
+  float: left;
+  display: inline;
+  text-align: left;
+  max-width: 75%;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #cacaca;
+}
+
+.speach-right {
+  float: right;
+  text-align: right;
+  text-align: left;
+  max-width: 75%;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #cacaca;
+}
+
+.blue-bubble {
+  background-color: #0b84fe!important;
+  color: #FFFFFF!important;
+  border: none!important;
+}
+
+.product-details {
+  padding: 10px;
+  background-color: #eee;
+}
+
+.details-actions {
+  width: 100%;
+  text-align: center;
+  padding: 5px 10px !important;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.hide {
+  display: none !important;
+}
+
+.button_small, .button_small_yes, .button_small_no {
+  border-radius: 0px !important;
+}
+
+.button_small_yes, .button_small_no {
+  float: left;
+  color: #fff;
+  width: 50%;
+  padding: 0px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.button_small_yes a, .button_small_no a {
+  font-size: 14px;
+  color: #fff;
+  top: 5px;
+  position: relative;
+  width: 100%;
+}
+
+.button_small {
+  background-color: #333 !important;
+}
+
+/* 27. Portfolio */ 
+
+.portfolio-wide {
+  margin-top: -18px;
+}
+
+.portfolio-wide-item img{
+  margin:0px;
+  padding:0px;  
+}
+
+.portfolio-wide-item{
+  margin-bottom:5px;  
+}
+
+.portfolio-wide-item .overlay{
+  background-color:rgba(0,0,0,0.7);
+    z-index:9
+}
+
+.portfolio-wide-item h3{
+  position:absolute;
+  width:100%;
+  top:50%;
+  margin-top:-20px;
+  z-index:98;
+  color:#FFFFFF;
+  text-align:center;
+  font-weight:500;  
+}
+
+.portfolio-wide-item p{
+  color:rgba(255,255,255,0.5);
+  position:absolute;
+  width:100%;
+  top:50%;
+  margin-top:0px;
+  z-index:98;
+  text-align:center;  
+}
+
+@media (min-width:768px){
+  
+  .portfolio-wide-item{
+    max-height:200px;
+  }
+  
+  .portfolio-wide-item h3{
+    font-size:28px;
+  }
+  
+  .portfolio-wide-item p{
+    font-size:14px;
+    margin-top:20px;  
+  }
+}
+
+.half-bottom {
+    margin-bottom: 15px;
+}
+
+a.portfolio-wide-item {
+      display: block;
+    position: relative;
+    overflow: hidden;
+ }
+
+
+.portfolio-wide-item h4 {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    margin-top: -20px;
+    z-index: 98;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.portfolio-wide-item .overlay {
+    background-color: rgba(0,0,0,0.7);
+    z-index: 9;
+}
+
+.portfolio-wide-item p {
+    color: rgba(255,255,255,0.5);
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    margin-top: 0px;
+    z-index: 98;
+    text-align: center;
+}
+
+.overlay {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.search-field {
+  padding: 3%;
+  width: 97%;
+  margin: 0 0 5px 0;
+  border: 1px solid #ddd;
+  margin-left: 5px;
+  font-size: 16px;
+}
+.spinner {
+  text-align: center;
+}
+
+.coming-soon {
+  padding: 10px;
+  text-align: center;
+  background-color: #007bb6;
+  width: 100%;
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+
+.home-button {
+  height: 28px;
+  width: 28px;
+  margin-top: -6px;
+}
+
+.back-button {
+  display: none;
+  max-width: 100% !important;
+  margin-top: -4px;
+}
+
+.article-view h1 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Roboto Medium';
+}
+
+.article-view img {
+  width: 99%;
+  height: auto;
+}
+
+.article-view {
+  padding: 10px;
+}

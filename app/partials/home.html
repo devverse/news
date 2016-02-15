@@ -1,0 +1,23 @@
+<input type="text" ng-model="search" class="search-field" placeholder="Search" ng-show="show_loading == false"/>
+
+<div ng-cloak ng-show="show_loading == true" class="spinner">
+  <img src="images/spinner.gif"/>
+</div>
+
+<div class="" ng-repeat="r in news | filter:search" style="padding:10px">
+  <div class="swipeout-content item-content" >
+    <div class="post_entry">
+        <div class="post_thumb">
+        <a href="#" ng-click="view($event, r)">
+        	<img src="{{r.thumbnail}}" />
+        </a>
+      	</div>
+      	<div class="post_details">
+        <h4 class="sneaker_title">
+        <a href="#" ng-click="view($event, r)"> 
+          {{r.title}}</a>
+        </h4>
+        </div>
+    </div>
+  </div>
+</div>

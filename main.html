@@ -1,0 +1,124 @@
+<html class="pixel-ratio-1 watch-active-state"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="images/apple-touch-startup-image-320x460.png">
+  <title> SoleNews</title>
+  <link rel="stylesheet" href="css/framework7.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style-custom.css">
+  <link type="text/css" rel='stylesheet' href='css/carousel-style.css'>
+  <link type="text/css" rel='stylesheet' href='css/carousel.css'>
+  <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+</head>
+<body id="mobile_wrap" class="">
+  <div class="statusbar-overlay"></div>
+  <div class="panel-overlay"></div>
+  <div class="panel panel-left panel-cover">
+    <nav class="list-nav">
+      <ul>
+        <li><a href="#/news/adidas" class="close-panel"> Adidas </a></li>
+        <li><a href="#/news/Aisics" class="close-panel"> Aisics </a></li>
+        <li><a href="#/news/Converse" class="close-panel"> Converse </a></li>
+        <li><a href="#/news/Jordan" class="close-panel"> Jordan </a></li>
+        <li><a href="#/news/nike" class="close-panel"> Nike </a></li>
+        <li><a href="#/news/new balance" class="close-panel"> New Balance </a></li>
+        <li><a href="#/news/puma" class="close-panel"> Puma </a></li>
+        <li><a href="#/news/Timberland" class="close-panel"> Timberland </a></li>
+        <li><a href="#/news/reebok" class="close-panel"> Reebok </a></li>
+        <li><a href="#/news/under Armour" class="close-panel"> Under Armour </a></li>
+        <li><a href="#/news/yeezy" class="close-panel"> Yeezy </a></li>
+        <li><a href="#/news/uncategorized" class="close-panel"> Other </a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="views">
+    <div class="view view-main" data-page="projects">
+      <div class="navbar navbar-hidden">
+        <div class="navbar-inner">
+          <div class="left sliding"><div class="logo_title">SoleNews</div></div>
+          <div class="right menu_open_icon"><a href="#" data-panel="left" class="link icon-only open-panel"></a></div>
+        </div>
+      </div>
+      <div class="pages navbar-through toolbar-through">
+        
+        <div data-page="projects" class="page no-toolbar no-navbar page-on-left">
+          <div class="page-content">
+            
+            
+          </div>
+        </div><div data-page="projects" class="page no-toolbar no-navbar page-on-center">
+        <div class="page-content">
+          
+          <div class="navbarpages">
+            <div class="navbar_home_link">
+              <a href="#" class="home_link">
+                <img src="images/home.png" class="home-button"/>
+                <img src="images/back_button.png" class="back-button"/>
+              </a>
+            </div>
+            <div class="navbar_page_center">SoleNews</div>
+            <div class="menu_open_icon_white"><a href="#" class="open-panel"><img src="images/menu.png" alt="" title=""></a></div>
+          </div>
+          <div id="pages_maincontent" class="" ng-app="solenewsApp" ng-controller="appController">
+            <div ng-cloak ng-show="show_loading == true" class="spinner">
+              <img src="images/spinner.gif"/>
+            </div>
+            <div ng-cloak ng-show="show_featured == true">
+              <div class="panel grey featured" style="text-align:center">
+                <span style="font-weight:bold;font-size:24px">Featured Sneakers</span>
+              </div>
+            </div>
+            <div class="pageContentWrapper" ng-show="show_featured == true" ng-cloak>
+              <!-- the viewport -->
+              <span class="normal-div featured-carousel m-carousel m-fluid m-carousel-photos" style="width:95%;height:300px">
+                <span class="normal-div m-carousel-inner">
+                  <span class="normal-div m-item" ng-repeat="f in featured" featured-directive>
+                    <p>{{f.name}} - ${{f.price}}</p>
+                    <img src="{{f.image.sizes.IPhone.url}}" ng-show="show_featured == true" class="featuredImage" style="clear:both;width: 45% !important;">
+                    <br/><br/>
+                    <a class="button_small" ng-click="buyProduct(f)" style="width:30%"> Details</a>
+                  </span>
+                </span>
+                <!-- the controls -->
+                <div class="m-carousel-controls m-carousel-hud" style="display:block !important">
+                  <a class="m-carousel-prev" href="#" data-slide="prev" style="opacity:0.3">Previous</a>
+                  <a class="m-carousel-next" href="#" data-slide="next" style="opacity:0.3">Next</a>
+                </div>
+              </span>
+            </div>
+            <div ng-view>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+  </div>
+  
+  <script src="cordova.js"></script>
+  <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+  <script type="text/javascript" src="js/framework7.min.js"></script>
+  <script type="text/javascript" src="js/my-app.js"></script>
+  <script src="js/lib/angular.js"></script>
+  <script src="js/lib/angular-route.js"></script>
+  <script src="js/lib/angular-sanitize.min.js"></script>
+
+  <script src="app/config.js"></script>
+  <script src="app/ads.js"></script>
+  <script src="app/app_rate.js"></script>
+  <script src="app/app.js"></script>
+  
+  <script src="app/controllers/app_c.js"></script>
+  <script src="app/controllers/home_c.js"></script>
+  <script src="app/controllers/view_c.js"></script>
+
+  <script src="app/models/app_service.js"></script>
+  <script src="app/models/news_service.js"></script>
+
+  <script src='js/moment.js'></script>
+  <script src='js/carousel.js'></script>
+</body>
+</html>
