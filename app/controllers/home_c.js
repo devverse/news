@@ -22,11 +22,13 @@ function homeController($scope, $rootScope, $routeParams, $location, news_servic
       html = $.parseHTML(data[x].description);
 
       image = $(html).find('img:first');
+
+      var src = image.attr('src');
       
-      if (typeof image != "undefined") {
-        data[x].thumbnail = image.attr('src');
+      if (typeof src != "undefined") {
+        data[x].thumbnail = src;
       } else {
-        data[x].thumbnail = '';
+        data[x].thumbnail = 'http://soleinsider.com/images/default.jpg';
       }
 
       $scope.news.push(data[x]);
@@ -63,7 +65,7 @@ function homeController($scope, $rootScope, $routeParams, $location, news_servic
     }
 
     $rootScope.$emit("featured", false);
-    $rootScope.$emit("showback_button", true);
+    $rootScope.$emit("showback_button", false);
     window.showBannerAd();
   })();
 }

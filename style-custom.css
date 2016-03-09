@@ -383,17 +383,26 @@ a.portfolio-wide-item {
   font-size: 14px !important;
 }
 
-
 .home-button {
   height: 28px;
   width: 28px;
   margin-top: -6px;
 }
 
+.home-button img {
+  max-width: 30% !important;
+  height: auto;
+  max-height: 40px;
+}
+
 .back-button {
   display: none;
   max-width: 100% !important;
   margin-top: -4px;
+}
+
+.back-button img {
+  max-width: 80% !important;
 }
 
 .article-view h1 {

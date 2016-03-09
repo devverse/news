@@ -5,7 +5,6 @@ function onDeviceReady() {
     }, 2000); 
 }
 
-
 // for Android
 admobid = {
     banner: 'ca-app-pub-0083160636450496/6391719559',
@@ -33,7 +32,6 @@ function prepareInterstitial() {
 	 	AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow: false} );
 	}
 }
-
 
 function showInterstitial() {
     if(typeof AdMob != 'undefined') {
