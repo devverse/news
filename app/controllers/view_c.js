@@ -11,7 +11,6 @@ function viewController($scope, $rootScope, news_service) {
     $scope.loadArticle();
     $rootScope.$emit("featured", false);
     $rootScope.$emit("showback_button", true);
-    window.showBannerAd();
   })();
 }
 

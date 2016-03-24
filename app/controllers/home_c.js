@@ -66,7 +66,6 @@ function homeController($scope, $rootScope, $routeParams, $location, news_servic
 
     $rootScope.$emit("featured", false);
     $rootScope.$emit("showback_button", false);
-    window.showBannerAd();
   })();
 }
 

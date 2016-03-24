@@ -69,22 +69,6 @@
               </div>
             </div>
             <div class="pageContentWrapper" ng-show="show_featured == true" ng-cloak>
-              <!-- the viewport -->
-              <span class="normal-div featured-carousel m-carousel m-fluid m-carousel-photos" style="width:95%;height:300px">
-                <span class="normal-div m-carousel-inner">
-                  <span class="normal-div m-item" ng-repeat="f in featured" featured-directive>
-                    <p>{{f.name}} - ${{f.price}}</p>
-                    <img src="{{f.image.sizes.IPhone.url}}" ng-show="show_featured == true" class="featuredImage" style="clear:both;width: 45% !important;">
-                    <br/><br/>
-                    <a class="button_small" ng-click="buyProduct(f)" style="width:30%"> Details</a>
-                  </span>
-                </span>
-                <!-- the controls -->
-                <div class="m-carousel-controls m-carousel-hud" style="display:block !important">
-                  <a class="m-carousel-prev" href="#" data-slide="prev" style="opacity:0.3">Previous</a>
-                  <a class="m-carousel-next" href="#" data-slide="next" style="opacity:0.3">Next</a>
-                </div>
-              </span>
             </div>
             <div ng-view>
             </div>
