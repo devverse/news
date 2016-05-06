@@ -7,11 +7,10 @@ document.addEventListener("deviceready", function() {
 	customLocale.rateButtonLabel = "Rate It Now";
 
 	AppRate.preferences.openStoreInApp = true;
-	AppRate.preferences.storeAppURL.ios = '799668898';
-	AppRate.preferences.storeAppURL.android = 'market://details?id=com.sole.insider.free';
+	AppRate.preferences.storeAppURL.android = 'market://details?id=com.sole.news';
 	AppRate.preferences.customLocale = customLocale;
 	AppRate.preferences.displayAppName = 'SoleNews';
-	AppRate.preferences.usesUntilPrompt = 1;
+	AppRate.preferences.usesUntilPrompt = 5;
 	AppRate.preferences.promptAgainForEachNewVersion = false;
 	AppRate.promptForRating();
 });
