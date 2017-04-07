@@ -50,8 +50,27 @@ function homeController($scope, $rootScope, $routeParams, $location, news_servic
 
   $scope.view = function(event, article) {
     event.preventDefault();
-    localStorage.setItem("article", JSON.stringify(article));
-    $location.path('view');
+    var slug = $scope.sluggify(article.title) +  '/';
+    var today = new Date();
+    var month = today.getMonth().toString();
+
+    if (month.length == 1) {
+      month = "0" + month;
+    }
+
+    var urlDate = today.getFullYear() + "/" + month + "/";
+    var link = 'http://soleinsider.com/news/' + urlDate + slug  + article.id;
+
+    window.open(link, '_blank', 'location=yes');
+  };
+
+  $scope.sluggify = function(text) {
+    return text.toString().toLowerCase()
+      .replace(/\s+/g, '-')           // Replace spaces with -
+      .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
+      .replace(/\-\-+/g, '-')         // Replace multiple - with single -
+      .replace(/^-+/, '')             // Trim - from start of text
+      .replace(/-+$/, '');            // Trim - from end of text
   };
 
   $scope.init = (function() {

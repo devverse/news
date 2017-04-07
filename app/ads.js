@@ -27,16 +27,11 @@ function removeBannerAd() {
 	}
 }
 
-function prepareInterstitial() {
-	if(typeof AdMob != 'undefined') {
-	 	AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow: false} );
-	}
-}
+function randomInterstitial() {
+    var random = Math.floor((Math.random() * 10) + 1);
 
-function showInterstitial() {
-    if(typeof AdMob != 'undefined') {
-    	AdMob.showInterstitial();
+    if (random == 1 || random == 2) {
+        localStorage.setItem("adCount", 1);
+        prepareInterstitial();
     }
 }
-
-document.addEventListener('prepareInterstitial', prepareInterstitial, false);

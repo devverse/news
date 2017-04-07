@@ -2,8 +2,8 @@
 
 <widget xmlns		= "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
-	versionCode="2"
-	version 	= "1.0.1"
+	versionCode="3"
+	version 	= "1.5"
 	id        = "com.sole.news">
 
 	<name>SoleNews</name>
@@ -78,14 +78,15 @@
 
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
-	<preference name='phonegap-version' value='cli-5.2.0' />
+	<preference name='phonegap-version' value='cli-6.5.0' />
 	<preference name="fullscreen" value="false" />
 	<preference name="auto-hide-splash-screen" value="false" />
 	<preference name="target-device" value="universal" />
 	<preference name="exit-on-suspend" value="false" />
 
+
 	<plugin name="cordova-plugin-inappbrowser" source="npm" />
 	<plugin name="cordova-plugin-admob" spec="2.9.9" source="npm" />
 	<plugin name="cordova-plugin-apprate" source="npm" />
-	<plugin name="com.indigoway.cordova.whitelist.whitelistplugin" spec="1.1.1" source="pgb" />
+	<plugin name="cordova-plugin-whitelist" spec="~1.3.1" />
 </widget>

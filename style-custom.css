@@ -13,8 +13,13 @@
   src: url('fonts/Roboto-Medium.ttf')  format('truetype')
 }
 
+@font-face {
+  font-family: 'Aldrich';
+  src: url('fonts/Aldrich-Regular.ttf')  format('truetype')
+}
+
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Aldrich', sans-serif;
 }
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {

@@ -53,8 +53,6 @@ function appController($scope, $rootScope, $window, app_service) {
       event.preventDefault();
       window.location = "main.html";
     });
-
-    window.showBannerAd();
   })();
 }
 
